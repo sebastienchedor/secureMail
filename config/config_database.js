@@ -1,7 +1,7 @@
 module.exports = {
   databaseHost: "localhost",
   databaseName: "secureMail",
-  databaseUser: "admin",
-  databasePassword: "password",
+  databaseUser: "root",
+  databasePassword: "securemail",
   force: false
 }

@@ -13,7 +13,10 @@ module.exports = {
         .then(getToken)
         .then(insertOrUpdateToken)
         .then(payload => {resolve(payload.token);})
-        .catch(reject);
+        .catch(err => {
+          console.error(err);
+          reject(err);
+        });
       });
     }
   }
