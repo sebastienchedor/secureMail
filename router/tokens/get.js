@@ -7,6 +7,7 @@ module.exports = (req, res) => {
 
   actions.createOrReplaceToken(params)
   .then(token => {
+      console.log('update');
     return actions.sendVerificationMail({
       mailID: params.mailID,
       token: token
